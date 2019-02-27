@@ -7,14 +7,15 @@
 chromosome.wide.insulation(hic, window.size, chrom)
 }
 \arguments{
-\item{hic}{exp}
+\item{hic}{A GENOVA-experiment}
 
 \item{window.size}{The sliding square size}
+
+\item{chrom}{Chromosome to use}
 }
 \value{
-happiness
+DF with insulation score
 }
 \description{
 loop over the entire chromosome and calcute the insulation score for every position, use this to correct if requeste
 }
-

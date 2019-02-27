@@ -2,7 +2,7 @@
 % Please edit documentation in R/insulation_score.R
 \name{insulation.polygon}
 \alias{insulation.polygon}
-\title{insulation.domainogram}
+\title{insulation.polygon}
 \usage{
 insulation.polygon(ins.score, rotate = F)
 }
@@ -15,4 +15,3 @@ happiness
 \description{
 create a domainogram for the insulation scores
 }
-

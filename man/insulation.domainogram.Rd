@@ -4,13 +4,14 @@
 \alias{insulation.domainogram}
 \title{insulation.domainogram}
 \usage{
-insulation.domainogram(exp1, chrom, start, end, window.size1 = 5,
-  window.size2 = 101, step = 2, local = T, zlim = c(-1, 0.5))
+insulation.domainogram(exp, chrom, start, end, axes = T,
+  window.size1 = 5, window.size2 = 101, step = 2, local = T,
+  zlim = c(-1, 0.5))
 }
 \arguments{
-\item{exp1}{A Hi-C experiment object: produced by construct.experiment().}
+\item{exp}{A Hi-C experiment object: produced by construct.experiment().}
 
-\item{chrom}{Chromosome}
+\item{chrom}{Chromosome of the region of interest}
 
 \item{start}{Start position of the region of interest}
 
@@ -22,7 +23,7 @@ insulation.domainogram(exp1, chrom, start, end, window.size1 = 5,
 
 \item{step}{Thesliding square step-size}
 
-\item{local}{Per chromosome?}
+\item{local}{Local or per-chromosome normalisation?}
 
 \item{zlim}{Zlims of the plot}
 
@@ -34,4 +35,6 @@ A plot
 \description{
 create a domainogram for the insulation scores
 }
-
+\examples{
+# Make an domainogram of a locus on chromosome 7 with windowsizes from 1 to 101.
+}
